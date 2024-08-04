@@ -6,6 +6,7 @@ features :
 1. add a new task:
    -after writing a text in the input field one can add a task
    -if no text in the input field and the button "add" is clicked it will alert to enter a text
+   
    <img width="517" alt="image" src="https://github.com/user-attachments/assets/4d83da63-8cce-4b27-b0d6-b016864fe20f">
 
 
