@@ -18,7 +18,9 @@ function adding_todo (){
         })
         btn.onclick = function(){
             let edited = prompt('edit text :');
-            div.textContent = edited;
+            if (edited){
+                div.textContent = edited;
+            }
             div.append(btn);
         }
     }else{
