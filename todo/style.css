@@ -13,3 +13,8 @@
     width:50%;
     margin:0 auto;
 }
+.space{
+    display:flex;
+    justify-content: space-between;
+    width:95px;
+}
