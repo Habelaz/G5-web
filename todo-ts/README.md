@@ -17,4 +17,5 @@ features :
     <img width="503" alt="Screenshot 2024-08-06 104339" src="https://github.com/user-attachments/assets/7ad5891d-c2e8-4e26-9239-a5d8709dc99c">
 
 3. delete the task:
+   
     <img width="511" alt="Screenshot 2024-08-06 104409" src="https://github.com/user-attachments/assets/565d6c48-2b35-488b-abaf-d05514e92ab8">
