@@ -1,0 +1,20 @@
+*{
+    font-family: sans-serif;
+}
+.pad{
+    margin-top: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    padding:7px;
+    display:flex;
+    justify-content: space-between;
+}
+#main{
+    width:50%;
+    margin:0 auto;
+}
+.space{
+    display:flex;
+    justify-content: space-between;
+    width:95px;
+}
