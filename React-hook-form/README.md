@@ -1,5 +1,5 @@
 
-<h1>Contact Form Component</h1>
+<h1>Contact Form </h1>
 
 This React TypeScript component implements a contact form using react-hook-form. It includes fields for Full Name, Email, and a Message, all of which are required.
 
