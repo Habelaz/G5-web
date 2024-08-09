@@ -1,12 +1,19 @@
 
-Contact Form Component
+<h1>Contact Form Component</h1>
+
 This React TypeScript component implements a contact form using react-hook-form. It includes fields for Full Name, Email, and a Message, all of which are required.
 
-Features
+<h2>Features</h2>
+
 Validation:
-The Full Name and Message fields must be filled out.
-The Email field must be a valid email format.
-Error Messages: If the user attempts to submit the form without filling in the required fields or entering an invalid email, error messages will be displayed beneath each relevant input.
+
+  -The Full Name and Message fields must be filled out.
+  
+  -The Email field must be a valid email format.
+
+Error Messages: 
+
+  -If the user attempts to submit the form without filling in the required fields or entering an invalid email, error     messages will be displayed beneath each relevant input.
 
 
 <img width="314" alt="Screenshot 2024-08-09 155122" src="https://github.com/user-attachments/assets/c98cebc7-948a-48a5-a9f2-8c11cff5aed3">
