@@ -30,10 +30,12 @@ const YoutubeForm = () => {
 
           <div className="forms">
             <label htmlFor="email">Your E-mail <span>*</span></label>
-            <input type="text" id="email" {...register("email",{pattern:
-              {value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                message:'* insert a valid format'
-              }
+            <input type="text" id="email" {...register("email",{
+                required: '* This field is required',
+                pattern:{
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message:'* insert a valid format'
+                }
               })
             } />
             <p>{errors.email?.message}</p>
