@@ -2,19 +2,26 @@
 import { useGetAllJobsQuery } from '../features/api';
 import { useRouter } from 'next/navigation'; 
 import JobList from './JobList';
-import { JobPosting } from './JobList'
+import { JobPosting } from './JobList';
 
 function LandingPage() {
   const router = useRouter(); 
-  const { data } = useGetAllJobsQuery();
+  const { data, error, isError, isLoading } = useGetAllJobsQuery();
   const jobList = data?.data;
 
-  console.log(jobList)
-
+  // Handling click event to navigate to Dashboard
   const handleClick = (jobData: JobPosting) => {
     const jobDataString = encodeURIComponent(JSON.stringify(jobData));
     router.push(`/dashboard?jobData=${jobDataString}`);
   };
+
+  if (isLoading) {
+    return <div className='text-center pt-[25%] text-3xl'>Loading...</div>;
+  }
+
+  if (isError) {
+    return <div className='text-center pt-[25%] text-3xl'>Error: {error.message || 'Failed to fetch job data.'}</div>;
+  }
 
   return (
     <div className="pl-3 m-6 flex flex-col w-[70%]">
@@ -32,7 +39,7 @@ function LandingPage() {
         </div>
       </div>
       <div>
-        {jobList?.map((job:JobPosting) => (
+        {jobList?.map((job: JobPosting) => (
           <div 
             key={job.id} 
             onClick={() => handleClick(job)} 
