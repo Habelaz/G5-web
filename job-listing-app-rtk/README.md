@@ -5,6 +5,12 @@ this job listing application fetches a data from the Api end point and populates
  - job description <br/>
  -handles failed api request
 
+ <h2>Error message if failed fetching</h2>
+
+ 
+<img width="960" alt="Screenshot 2024-08-15 101544" src="https://github.com/user-attachments/assets/619c09a7-2459-426e-b07e-3a0cab7a1893">
+
+
 <h2>Landing page</h2>
 
 
